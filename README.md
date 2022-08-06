@@ -1,2 +1,2 @@
 # Space
-A Finder missing feature
+A missing feature of macOS Finder
