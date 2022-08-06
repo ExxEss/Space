@@ -1,0 +1,35 @@
+
+/* Class = "NSMenuItem"; title = "Space"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Space";
+
+/* Class = "NSMenuItem"; title = "Quit Space"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit Space";
+
+/* Class = "NSMenuItem"; title = "About Space"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About Space";
+
+/* Class = "NSTextFieldCell"; title = "Not seeing Space' options in the context menu of Finder? Please make sure Space Finder Extension is enabled."; ObjectID = "AJL-iA-v6m"; */
+"AJL-iA-v6m.title" = "Due to the macOS Sandbox restriction, Space Finder Extension only works in the home directory and all its subdirectories i.g. ~/, ~/Desktop, ~/Downloads, ~/Documents, ~/Documents/Any-Folder etc.
+
+If you don't see the Space actions in the Finder context menu in these non-empty directories, please ensure that Space Finder Extension is enabled.";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSWindow"; title = "🚀  Space"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "🚀  Space";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Minimize";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Window";
+
+/* Class = "NSButtonCell"; title = "Open Preferences"; ObjectID = "amo-nl-SoQ"; */
+"amo-nl-SoQ.title" = "Open Preferences";
+
+/* Class = "NSMenu"; title = "Space"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Space";

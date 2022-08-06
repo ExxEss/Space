@@ -1,0 +1,35 @@
+
+/* Class = "NSMenuItem"; title = "Space"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "Space";
+
+/* Class = "NSMenuItem"; title = "Quit Space"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Space قم بإنهاء";
+
+/* Class = "NSMenuItem"; title = "About Space"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "Space حول كروم";
+
+/* Class = "NSTextFieldCell"; title = "Not seeing Space' options in the context menu of Finder? Please make sure Space Finder Extension is enabled."; ObjectID = "AJL-iA-v6m"; */
+"AJL-iA-v6m.title" = "نظرًا لتقييد macOS Sandbox ، يعمل Space Finder Extension فقط في الدليل الرئيسي وجميع الأدلة الفرعية الخاصة به على سبيل المثال. ~ / ، ~ / سطح المكتب ، ~ / التنزيلات ، ~ / المستندات ، ~ / المستندات / أي مجلد وما إلى ذلك.
+
+إذا كنت لا ترى إجراءات Space في قائمة سياق Finder في هذه الأدلة غير الفارغة ، فيرجى التأكد من تمكين Space Finder Extension.";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSWindow"; title = "🚀  Space"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "🚀  Space";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "تصغير";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "نافذة";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "نافذة";
+
+/* Class = "NSButtonCell"; title = "Open Preferences"; ObjectID = "amo-nl-SoQ"; */
+"amo-nl-SoQ.title" = "افتح التفضيلات";
+
+/* Class = "NSMenu"; title = "Space"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "Space";

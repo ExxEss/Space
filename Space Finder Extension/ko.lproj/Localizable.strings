@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Space
+
+  Created by Yuguo Xie on 29/07/22.
+  Copyright © 2022 Xie Yuguo. All rights reserved.
+*/
+"Cancel" = "취소";
+"Create" = "만들다";
+"Confirm" = "확인하다";
+"Name" = "이름";
+"Hide All Files" = "모든 파일 숨다";
+"Show All Files" = "모든 파일 보여 주다";
+"Space Collection" = "공간 수집";
+"Delete Space" = "공간 삭제";
+"Delete" = "삭제";
+"Hide" = "숨다";
+"Show Only" = "만 표시";
+"New Space with Selection" = "선택한 항목이 있는 새로운 공간";
+"Add to Space" = "공간에 추가";

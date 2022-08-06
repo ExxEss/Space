@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Space
+
+  Created by Yuguo Xie on 29/07/22.
+  Copyright © 2022 Xie Yuguo. All rights reserved.
+*/
+"Cancel" = "Cancelar";
+"Create" = "Crear";
+"Confirm" = "Confirmar";
+"Name" = "Nombre";
+"Hide All Files" = "Ocultar todos los archivos";
+"Show All Files" = "Mostrar todos los archivos";
+"Space Collection" = "Coleccón espacial";
+"Delete Space" = "Eliminar espacio";
+"Delete" = "Eliminar";
+"Hide" = "Ocultar";
+"Show Only" = "Solo mostrar";
+"New Space with Selection" = "Nuevo espacio con la selección";
+"Add to Space" = "Añadir a espacio";

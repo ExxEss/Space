@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Space
+
+  Created by Yuguo Xie on 29/07/22.
+  Copyright © 2022 Xie Yuguo. All rights reserved.
+*/
+"Cancel" = "Oтменить";
+"Create" = "Создавать";
+"Confirm" = "Kонфирмовать";
+"Name" = "Hазвание";
+"Hide All Files" = "Скрыть все файлы";
+"Show All Files" = "Показать все файлы";
+"Space Collection" = "Космическая коллекция";
+"Delete Space" = "Удалить kосмическая";
+"Delete" = "Удалить";
+"Hide" = "Скрыть";
+"Show Only" = "Покажи только";
+"New Space with Selection" = "Новое космическая с выделением объектами";
+"Add to Space" = "Добавить в космическую";

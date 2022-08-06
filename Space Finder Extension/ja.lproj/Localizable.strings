@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Space
+
+  Created by Yuguo Xie on 29/07/22.
+  Copyright © 2022 Xie Yuguo. All rights reserved.
+*/
+"Cancel" = "キヤソセル";
+"Create" = "クリエート";
+"Confirm" = "確認";
+"Name" = "名称";
+"Hide All Files" = "すべてのファイルを隠す";
+"Show All Files" = "すべてのファイルを表示";
+"Space Collection" = "スペースコレクション";
+"Delete Space" = "スペースを削除";
+"Delete" = "削除";
+"Hide" = "隠れる";
+"Show Only" = "表示のみ";
+"New Space with Selection" = "選択項目から新規スペース";
+"Add to Space" = "スペースに追加";
