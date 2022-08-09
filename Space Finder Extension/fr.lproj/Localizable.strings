@@ -11,6 +11,7 @@
 "Name" = "Nom";
 "Hide All Files" = "Masquer tous les fichiers";
 "Show All Files" = "Montrer tous les fichiers";
+"Show File" = "Montrer fichier";
 "Space Collection" = "Collection de espaces";
 "Delete Space" = "Supprimer espace";
 "Delete" = "Supprimer";

@@ -11,6 +11,7 @@
 "Name" = "이름";
 "Hide All Files" = "모든 파일 숨다";
 "Show All Files" = "모든 파일 보여 주다";
+"Show File" = "파일 보여 주다";
 "Space Collection" = "공간 수집";
 "Delete Space" = "공간 삭제";
 "Delete" = "삭제";

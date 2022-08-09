@@ -162,7 +162,7 @@ class SpaceController {
         }
         
         if spaceName == _container!.current!.name {
-            alter(spaceName: PresetSpaces.whole.rawValue)
+            alter(spaceName: PresetSpaces.empty.rawValue)
             show()
         }
         persist()
@@ -202,11 +202,25 @@ class SpaceController {
         }
     }
     
+    var addableSpaces: [Space] {
+        get {
+            container.spaces!.filter {
+                !$0.isPreset && $0.name != container.current?.name
+            }
+        }
+    }
+    
     func hideItems(items: [URL]?) {
         for item in items! {
             var tmp = item
             tmp.isHidden = true
         }
+    }
+    
+    func showItem(item: String) {
+        var url = URL(fileURLWithPath: item,
+            relativeTo: _container!.targetURL)
+        url.isHidden = false
     }
     
     private func setCurrentAsNil() {
@@ -272,10 +286,10 @@ class SpaceController {
     
     func showOnly(items: [URL]?) {
         let path = _container!.targetURL.path
-        let total = getTargetItems(targetPath: path) ?? []
+        let total = getTargetItems(targetPath: path)
         let items = items!.map { $0.lastPathComponent }
         
-        for item in total {
+        for item in total! {
             if !items.contains(item) {
                 var url = URL(fileURLWithPath: item,
                               relativeTo: _container!.targetURL)
@@ -285,10 +299,21 @@ class SpaceController {
         setCurrentAsNil()
     }
     
+    func replace(item: String, items: [URL]?) {
+        var items = items!.map { $0.lastPathComponent }
+        items.append(item)
+        
+        for _item in items {
+            var url = URL(fileURLWithPath: _item,
+                          relativeTo: _container!.targetURL)
+            url.isHidden = item != _item
+        }
+    }
+    
     private func show() {
         if _container!.current != nil {
             let path = _container!.targetURL.path
-            let total = getTargetItems(targetPath: path) ?? []
+            let total = getTargetItems(targetPath: path)
             let spaceName = _container!.current!.name
             
             let bookmarks = _container!.current!.urlBookmarks ?? []
@@ -309,7 +334,7 @@ class SpaceController {
                 return
             }
             
-            for item in total {
+            for item in total! {
                 var url = URL(fileURLWithPath: item,
                                 relativeTo: _container!.targetURL)
                 
@@ -335,11 +360,33 @@ class SpaceController {
         }
     }
     
+    var hiddenItems: [String] {
+        get {
+            let path = _container!.targetURL.path
+            let total = getTargetItems(targetPath: path)
+            return total!.filter {
+                URL(fileURLWithPath: $0,
+                    relativeTo: _container!.targetURL).isHidden &&
+                $0.prefix(1) != "."
+            }
+        }
+    }
+    
+    var totalItems: [String] {
+        get {
+            let path = _container!.targetURL.path
+            let total = getTargetItems(targetPath: path)
+            return total!.filter {
+                $0.prefix(1) != "."
+            }
+        }
+    }
+    
     func hasUnavailableTargetURL() -> Bool {
         let path = _container!.targetURL.path
-        let total = getTargetItems(targetPath: path) ?? []
+        let total = getTargetItems(targetPath: path)
         
-        return total.count == 0 || !isHomeRelative(path: path)
+        return total!.count == 0 || !isHomeRelative(path: path)
     }
     
     private func isHomeRelative(path: String) -> Bool {
@@ -350,8 +397,9 @@ class SpaceController {
         get {
             let pw = getpwuid(getuid());
             let home = pw?.pointee.pw_dir!
-            let homePath = FileManager.default.string(withFileSystemRepresentation: home!,
-                                                      length: Int(strlen(home!)))
+            let homePath =
+            FileManager.default.string(withFileSystemRepresentation: home!,
+                                       length: Int(strlen(home!)))
             return homePath
         }
     }
