@@ -1,0 +1,35 @@
+
+/* Class = "NSMenuItem"; title = "Space"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "FinderSpace";
+
+/* Class = "NSMenuItem"; title = "Quit Space"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quitter FidnerSpace";
+
+/* Class = "NSMenuItem"; title = "About Space"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "À propos de FinderSpace";
+
+/* Class = "NSTextFieldCell"; title = "Not seeing Space' options in the context menu of Finder? Please make sure Space Finder Extension is enabled."; ObjectID = "AJL-iA-v6m"; */
+"AJL-iA-v6m.title" = "En raison de la restriction macOS Sandbox, FinderSpace ne fonctionne que dans le répertoire d'accueil et tous ses sous-répertoires, par exemple. ~/, ~/Desktop, ~/Downloads, ~/Documents, ~/Documents/Any-Folder etc.
+
+Si vous ne voyez pas les actions FinderSpace dans le menu contextuel du Finder dans ces répertoires non vides, assurez-vous que FinderSpace est déjà activée.";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSWindow"; title = "🚀  Space"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "🚀  FinderSpace";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Placer dans le Dock";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Fenêtre";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Fenêtre";
+
+/* Class = "NSButtonCell"; title = "Open Preferences"; ObjectID = "amo-nl-SoQ"; */
+"amo-nl-SoQ.title" = "Ouvrir préférences";
+
+/* Class = "NSMenu"; title = "Space"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "FinderSpace";

@@ -1,0 +1,35 @@
+
+/* Class = "NSMenuItem"; title = "FinderSpace"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "FinderSpace";
+
+/* Class = "NSMenuItem"; title = "Quit FinderSpace"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Выйти из FinderSpace";
+
+/* Class = "NSMenuItem"; title = "About FinderSpace"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "O FinderSpace";
+
+/* Class = "NSTextFieldCell"; title = "Not seeing Space' options in the context menu of Finder? Please make sure Space Finder Extension is enabled."; ObjectID = "AJL-iA-v6m"; */
+"AJL-iA-v6m.title" = "Из-за ограничения песочницы macOS Space Finder Extension работает только в домашнем каталоге и во всех его подкаталогах, т.е. ~/, ~/Desktop, ~/Downloads, ~/Documents, ~/Documents/Any-Folder и т. д.
+
+Если вы не видите действия Space в контекстном меню Finder в этих непустых каталогах, убедитесь, что FinderSpace уже включен.";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSWindow"; title = "🚀  FinderSpace"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "🚀  FinderSpace";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Cвернуть";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Oкно";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Oкно";
+
+/* Class = "NSButtonCell"; title = "Open Preferences"; ObjectID = "amo-nl-SoQ"; */
+"amo-nl-SoQ.title" = "Открыть настройки";
+
+/* Class = "NSMenu"; title = "Space"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "FinderSpace";

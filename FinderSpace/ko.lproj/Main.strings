@@ -1,0 +1,35 @@
+
+/* Class = "NSMenuItem"; title = "Space"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "FinderSpace";
+
+/* Class = "NSMenuItem"; title = "Quit Space"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "FinderSpace 종료";
+
+/* Class = "NSMenuItem"; title = "About Space"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "FinderSpace 정보";
+
+/* Class = "NSTextFieldCell"; title = "Not seeing Space' options in the context menu of Finder? Please make sure Space Finder Extension is enabled."; ObjectID = "AJL-iA-v6m"; */
+"AJL-iA-v6m.title" = "macOS 샌드박스 제한으로 인해 FinderSpace 는 홈 디렉토리와 모든 하위 디렉토리(예: ~/, ~/Desktop, ~/Downloads, ~/Documents, ~/Documents/Any-Folder 등
+
+비어 있지 않은 디렉토리의 Finder 컨텍스트 메뉴에 FinderSpace 작업이 표시되지 않으면 FinderSpace 가 이미 활성화되어 있는지 확인하십시오.";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSWindow"; title = "🚀  FinderSpace"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "🚀  FinderSpace";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "최소화";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "윈도우";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "윈도우";
+
+/* Class = "NSButtonCell"; title = "Open Preferences"; ObjectID = "amo-nl-SoQ"; */
+"amo-nl-SoQ.title" = "환경 설정 열기";
+
+/* Class = "NSMenu"; title = "FinderSpace"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "FinderSpace";

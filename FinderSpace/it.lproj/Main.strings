@@ -1,0 +1,35 @@
+
+/* Class = "NSMenuItem"; title = "FinderSpace"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "FinderSpace";
+
+/* Class = "NSMenuItem"; title = "Quit FinderSpace"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Esci da FinderSpace";
+
+/* Class = "NSMenuItem"; title = "About FinderSpace"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About FinderSpace";
+
+/* Class = "NSTextFieldCell"; title = "Not seeing Space' options in the context menu of Finder? Please make sure Space Finder Extension is enabled."; ObjectID = "AJL-iA-v6m"; */
+"AJL-iA-v6m.title" = "A causa della restrizione di macOS Sandbox, FinderSpace funziona solo nella home directory e in tutte le sue sottodirectory, ad es. ~/, ~/Desktop, ~/Downloads, ~/Documents, ~/Documents/Qualsiasi-cartella ecc.
+
+Se non vedi le azioni FinderSpace nel menu contestuale del Finder in queste directory non vuote, assicurati che FinderSpace sia già abilitata.";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSWindow"; title = "🚀  FinderSpace"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "🚀  FinderSpace";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "Riduci a icona";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "Finestra";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Finestra";
+
+/* Class = "NSButtonCell"; title = "Open Preferences"; ObjectID = "amo-nl-SoQ"; */
+"amo-nl-SoQ.title" = "Apri preferenze";
+
+/* Class = "NSMenu"; title = "FinderSpace"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "FinderSpace";

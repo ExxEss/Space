@@ -1,0 +1,35 @@
+
+/* Class = "NSMenuItem"; title = "FinderSpace"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "FinderSpace";
+
+/* Class = "NSMenuItem"; title = "Quit FinderSpace"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "FinderSpace を終了";
+
+/* Class = "NSMenuItem"; title = "About FinderSpace"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "FinderSpace について";
+
+/* Class = "NSTextFieldCell"; title = "Not seeing Space' options in the context menu of Finder? Please make sure Space Finder Extension is enabled."; ObjectID = "AJL-iA-v6m"; */
+"AJL-iA-v6m.title" = "macOS サンドボックスの制限により、FinderSpace はホーム ディレクトリとそのすべてのサブディレクトリでのみ機能します。 ~/, ~/Desktop, ~/Downloads, ~/Documents, ~/Documents/Any-Folder など
+
+これらの空でないディレクトリの Finder コンテキスト メニューに FinderSpace アクションが表示されない場合は、FinderSpace が既に有効になっていることを確認してください。";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSWindow"; title = "🚀  FinderSpace"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "🚀  FinderSpace";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "OY7-WF-poV"; */
+"OY7-WF-poV.title" = "しまう";
+
+/* Class = "NSMenu"; title = "Window"; ObjectID = "Td7-aD-5lo"; */
+"Td7-aD-5lo.title" = "ウインドウ";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "ウインドウ";
+
+/* Class = "NSButtonCell"; title = "Open Preferences"; ObjectID = "amo-nl-SoQ"; */
+"amo-nl-SoQ.title" = "「設定」を開く";
+
+/* Class = "NSMenu"; title = "FinderSpace"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "FinderSpace";
