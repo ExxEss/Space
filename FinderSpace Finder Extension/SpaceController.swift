@@ -23,16 +23,14 @@ class SpaceController {
     var localizedDict: [String: String] = [:]
     weak var timer: Timer?
     
-    static let shared: SpaceController = {
-        let instance = SpaceController()
+    init() {
         for spaceKey in PresetSpaces.allCases {
-            instance.localizedDict[
+            localizedDict[
                 spaceKey.localize()
             ] = spaceKey.rawValue
         }
-        instance.checkState()
-        return instance
-    }()
+        checkState()
+    }
     
     func setup(targetURL: URL) {
         if self.currentTargetURL != targetURL {

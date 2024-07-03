@@ -11,7 +11,7 @@ import CoreData
 
 class FinderSync: FIFinderSync {
     let userDefaults = UserDefaults.spaceDefaults
-    let spaceController = SpaceController.shared
+    var spaceController = SpaceController()
     
     override init() {
         super.init()
@@ -28,6 +28,7 @@ class FinderSync: FIFinderSync {
     }
     
     override func menu(for menuKind: FIMenuKind) -> NSMenu {
+        spaceController = SpaceController()
         spaceController.setup(targetURL: targetURL!)
         
         let main = NSMenu()
