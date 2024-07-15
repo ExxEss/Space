@@ -29,7 +29,7 @@ class SpaceController {
                 spaceKey.localize()
             ] = spaceKey.rawValue
         }
-        checkState()
+//        checkState()
     }
     
     func setup(targetURL: URL) {
@@ -298,15 +298,15 @@ class SpaceController {
     
     private func checkState() {
         self._checkState()
-        if timer == nil {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                self.timer =
-                Timer.scheduledTimer(withTimeInterval: 1.0,
-                                     repeats: true) { timer in
-                    self._checkState()
-                }
-            }
-        }
+//        if timer == nil {
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+//                self.timer =
+//                Timer.scheduledTimer(withTimeInterval: 1.0,
+//                                     repeats: true) { timer in
+//                    self._checkState()
+//                }
+//            }
+//        }
     }
     
     private func _checkState() {
