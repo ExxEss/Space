@@ -140,7 +140,7 @@ class SpaceController {
                     }
                 }
             } catch {
-                DialogCreator.alertInfo(info: "Failed to update")
+                TextInputPanelController.alertInfo(info: "Failed to update")
                 return
             }
             
@@ -195,7 +195,7 @@ class SpaceController {
                     _container!.spaces = spaces
                     alter(spaceName: spaceName)
                 } catch {
-                    DialogCreator.alertInfo(info: "Failed to add items")
+                    TextInputPanelController.alertInfo(info: "Failed to add items")
                     return
                 }
             }
@@ -214,7 +214,7 @@ class SpaceController {
                 _container!.spaces![index].urlBookmarks?.append(contentsOf: newBookmarks)
                 alter(spaceName: spaceName)
             } catch {
-                DialogCreator.alertInfo(info: "Failed to add items")
+                TextInputPanelController.alertInfo(info: "Failed to add items")
                 return
             }
         }
@@ -396,7 +396,7 @@ class SpaceController {
                     }
                 }
             } catch {
-                DialogCreator.alertInfo(info: "Failed to show")
+                TextInputPanelController.alertInfo(info: "Failed to show")
                 return
             }
             

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,7 @@
 		D713B1B32890C9C100B3D725 /* CustomUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713B1922890C7D500B3D725 /* CustomUserDefaults.swift */; };
 		D713B1B42890C9C500B3D725 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713B1942890C7F900B3D725 /* Space.swift */; };
 		D713B1B52890C9C900B3D725 /* SpaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713B19A2890C85900B3D725 /* SpaceController.swift */; };
-		D713B1B62890C9CB00B3D725 /* DialogCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713B19E2890C88C00B3D725 /* DialogCreator.swift */; };
+		D713B1B62890C9CB00B3D725 /* InputPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713B19E2890C88C00B3D725 /* InputPanel.swift */; };
 		D713B1B72890C9CE00B3D725 /* MenuCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713B1A02890C89900B3D725 /* MenuCreator.swift */; };
 		D713B1B82890C9D300B3D725 /* NSMenuItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713B1962890C84600B3D725 /* NSMenuItem-Extension.swift */; };
 		D713B1B92890C9D600B3D725 /* URL-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D713B1982890C84F00B3D725 /* URL-Extension.swift */; };
@@ -62,7 +62,7 @@
 		D713B1962890C84600B3D725 /* NSMenuItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMenuItem-Extension.swift"; sourceTree = "<group>"; };
 		D713B1982890C84F00B3D725 /* URL-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL-Extension.swift"; sourceTree = "<group>"; };
 		D713B19A2890C85900B3D725 /* SpaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceController.swift; sourceTree = "<group>"; };
-		D713B19E2890C88C00B3D725 /* DialogCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogCreator.swift; sourceTree = "<group>"; };
+		D713B19E2890C88C00B3D725 /* InputPanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPanel.swift; sourceTree = "<group>"; };
 		D713B1A02890C89900B3D725 /* MenuCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCreator.swift; sourceTree = "<group>"; };
 		D713B1A62890C93600B3D725 /* FinderSpace Finder Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FinderSpace Finder Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D713B1A82890C93600B3D725 /* FinderSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinderSync.swift; sourceTree = "<group>"; };
@@ -149,7 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				D713B1922890C7D500B3D725 /* CustomUserDefaults.swift */,
-				D713B19E2890C88C00B3D725 /* DialogCreator.swift */,
+				D713B19E2890C88C00B3D725 /* InputPanel.swift */,
 				D713B1A82890C93600B3D725 /* FinderSync.swift */,
 				D713B1A02890C89900B3D725 /* MenuCreator.swift */,
 				D713B1942890C7F900B3D725 /* Space.swift */,
@@ -291,7 +291,7 @@
 			files = (
 				D713B1B52890C9C900B3D725 /* SpaceController.swift in Sources */,
 				D713B1A92890C93600B3D725 /* FinderSync.swift in Sources */,
-				D713B1B62890C9CB00B3D725 /* DialogCreator.swift in Sources */,
+				D713B1B62890C9CB00B3D725 /* InputPanel.swift in Sources */,
 				D713B1B92890C9D600B3D725 /* URL-Extension.swift in Sources */,
 				D713B1B72890C9CE00B3D725 /* MenuCreator.swift in Sources */,
 				D713B1B32890C9C100B3D725 /* CustomUserDefaults.swift in Sources */,

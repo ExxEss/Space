@@ -150,29 +150,36 @@ class FinderSync: FIFinderSync {
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             [self] in
             NSApplication.shared.activate(ignoringOtherApps: true)
-            let newFileName = DialogCreator.createFileDialog()
-            let path = self.spaceController.currentTargetURL?
-                .appendingPathComponent(newFileName).path
-            let url = URL(fileURLWithPath: path!)
-            do {
-                try "".write(to: url, atomically: true, encoding: .utf8)
-                    NSWorkspace.shared.open(url)
-            } catch {
-                print(error)
+            
+            // Replace DialogCreator with TextInputPanelController
+            TextInputPanelController.createFileDialog { [self] newFileName in
+                if let fileName = newFileName, !fileName.isEmpty {
+                    let path = self.spaceController.currentTargetURL?
+                        .appendingPathComponent(fileName).path
+                    let url = URL(fileURLWithPath: path!)
+                    do {
+                        try "".write(to: url, atomically: true, encoding: .utf8)
+                        NSWorkspace.shared.open(url)
+                    } catch {
+                        print(error)
+                    }
+                }
             }
         }
     }
     
     @IBAction func createSpace(_ sender: AnyObject?) {
         let items: [URL]? = selectedItems
-        // .now() + 0.3
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             [self] in
             NSApplication.shared.activate(ignoringOtherApps: true)
-            let newSpaceName = DialogCreator.createSpaceDialog()
-            if (!newSpaceName.isEmpty) {
-                spaceController.create(spaceName: newSpaceName,
-                                        items: items)
+            
+            // Replace DialogCreator with TextInputPanelController
+            TextInputPanelController.createSpaceDialog { [self] newSpaceName in
+                if let spaceName = newSpaceName, !spaceName.isEmpty {
+                    spaceController.create(spaceName: spaceName,
+                                          items: items)
+                }
             }
         }
     }
@@ -189,10 +196,12 @@ class FinderSync: FIFinderSync {
         DispatchQueue.main.asyncAfter(deadline: .now()) {
             [self] in
             NSApplication.shared.activate(ignoringOtherApps: true)
-            let confirmed =
-            DialogCreator.deleteSpaceDialog(spaceName: sender!.title)
-            if confirmed {
-                spaceController.delete(spaceName: sender!.title)
+            
+            // Replace DialogCreator with TextInputPanelController
+            TextInputPanelController.deleteSpaceDialog(spaceName: sender!.title) { [self] confirmed in
+                if confirmed {
+                    spaceController.delete(spaceName: sender!.title)
+                }
             }
         }
     }
