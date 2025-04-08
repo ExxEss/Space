@@ -15,12 +15,16 @@ class FinderSync: FIFinderSync {
     
     override init() {
         super.init()
-        NSLog("FinderSync() launched from %@",
-                Bundle.main.bundlePath as NSString)
+        NSLog(
+            "FinderSync() launched from %@",
+            Bundle.main.bundlePath as NSString
+        )
 
 //        userDefaults.resetDefaults()
-        FIFinderSyncController.default().directoryURLs =
-                [URL(fileURLWithPath: "/")]
+        FIFinderSyncController
+            .default()
+            .directoryURLs
+        = [URL(fileURLWithPath: "/")]
     }
     
     deinit {
@@ -42,95 +46,126 @@ class FinderSync: FIFinderSync {
         if FIFinderSyncController.default().selectedItemURLs()!.contains(
             FIFinderSyncController.default().targetedURL()!
         ) {
-            main.addItem(NSMenuItem(title: "New File".localize(),
-                                       action: #selector(createFile(_:))))
+            main.addItem(
+                NSMenuItem(
+                    title: "New File".localize(),
+                    action: #selector(createFile(_:))
+                )
+            )
             
             if !spaceController.isEmptyTargetURL() {
-                MenuCreator.createPresetMenuItems(menu: main,
-                                                  action: #selector(alterPresetSpace(_:)),
-                                                  container: container)
+                MenuCreator.createPresetMenuItems(
+                    menu: main,
+                    action: #selector(alterPresetSpace(_:)),
+                    container: container
+                )
                 
-                createHiddenFilesDropdown(title: "Show File",
-                                          main: main,
-                                          action: #selector(show(_:)))
-                
+                createHiddenFilesDropdown(
+                    title: "Show File",
+                    main: main,
+                    selector: #selector(show(_:))
+                )
                 
                 // Exist customized spaces, add delete menu
                 if container.spaces!.count > PresetSpaces.allCases.count {
                     let submenu = NSMenu()
-                    let customizedDropdown = NSMenuItem(title: "Space Collection".localize(),
-                                                        action: nil)
+                    let spaceCollectionDropdown = NSMenuItem(
+                        title: "Space Collection".localize(),
+                        action: nil
+                    )
                     
-                    main.addItem(customizedDropdown)
-                    main.setSubmenu(submenu, for: customizedDropdown)
+                    main.addItem(spaceCollectionDropdown)
+                    main.setSubmenu(submenu, for: spaceCollectionDropdown)
                     
-                    MenuCreator.createCustomizedMenu(menu: submenu,
-                                                     action: #selector(alterSpace(_:)),
-                                                     container: container)
-                    
-                    let deleteDropdown = NSMenuItem(title: "Delete".localize(),
-                                                    action: nil)
-                    let deletionSubmenu = NSMenu()
-                    
-                    MenuCreator.createDeleteMenu(menu: deletionSubmenu,
-                                                 action: #selector(deleteSpace(_:)),
-                                                 container: spaceController.container)
-                    
-                    submenu.addItem(deleteDropdown)
-                    submenu.setSubmenu(deletionSubmenu, for: deleteDropdown)
+                    MenuCreator.createSpaceCollectionMenu(
+                        menu: submenu,
+                        switchAction: #selector(alterSpace(_:)),
+                        deleteAction: #selector(deleteSpace(_:)),
+                        container: container
+                    )
                 }
             }
         } else {
-            main.addItem(NSMenuItem(title: "Hide".localize(),
-                                       action: #selector(hide(_:))))
+            main.addItem(
+                NSMenuItem(
+                    title: "Hide".localize(),
+                    action: #selector(hide(_:))
+                )
+            )
             
-            main.addItem(NSMenuItem(title: "Show Only".localize(),
-                                       action: #selector(showOnly(_:))))
+            main.addItem(
+                NSMenuItem(
+                    title: "Show Only".localize(),
+                    action: #selector(showOnly(_:))
+                )
+            )
 
-            main.addItem(NSMenuItem(title: "New Space with Selection".localize(),
-                                       action: #selector(createSpace(_:))))
+            main.addItem(
+                NSMenuItem(
+                    title: "New Space with Selection".localize(),
+                    action: #selector(createSpace(_:))
+                )
+            )
             
             
             let spaces = spaceController.addableSpaces
             
             if spaces.count > 0 {
-                let addToDropdown = NSMenuItem(title: "Add to Space".localize(),
-                                               action: #selector(addToSpace(_:)))
+                let addToDropdown = NSMenuItem(
+                    title: "Add to Space".localize(),
+                    action: #selector(addToSpace(_:))
+                )
                 let addToSubmenu = NSMenu()
                 
-                MenuCreator.createAddMenu(menu: addToSubmenu,
-                                          action: #selector(addToSpace(_:)),
-                                          spaces: spaces)
+                MenuCreator.createAddMenu(
+                    menu: addToSubmenu,
+                    action: #selector(addToSpace(_:)),
+                    spaces: spaces
+                )
                 
                 main.addItem(addToDropdown)
                 main.setSubmenu(addToSubmenu, for: addToDropdown)
                 
-                if let currentContainer = container.current, !currentContainer.isPreset {
-                    let moveToDropdown = NSMenuItem(title: "Move to Space".localize(),
-                                                    action: #selector(moveToSpace(_:)))
+                if let currentContainer =
+                    container.current,
+                    !currentContainer.isPreset
+                {
+                    let moveToDropdown = NSMenuItem(
+                        title: "Move to Space".localize(),
+                        action: #selector(moveToSpace(_:))
+                    )
                     let moveToSubmenu = NSMenu()
 
-                    MenuCreator.createMoveMenu(menu: moveToSubmenu,
-                                              action: #selector(moveToSpace(_:)),
-                                              spaces: spaces)
+                    MenuCreator.createMoveMenu(
+                        menu: moveToSubmenu,
+                        action: #selector(moveToSpace(_:)),
+                        spaces: spaces
+                    )
 
                     main.addItem(moveToDropdown)
-                    main.setSubmenu(moveToSubmenu, for: moveToDropdown)
+                    main.setSubmenu(
+                        moveToSubmenu,
+                        for: moveToDropdown
+                    )
                 }
             }
         }
         return main
     }
     
-    func createHiddenFilesDropdown(title: String,
-                                   main: NSMenu,
-                                   action selector: Selector?) {
+    func createHiddenFilesDropdown(
+        title: String,
+        main: NSMenu,
+        selector: Selector?
+    ) {
         var hiddenItems = spaceController.hiddenItems
         
         if hiddenItems.count > 0 {
             let submenu = NSMenu()
-            let dropdown = NSMenuItem(title: title.localize(),
-                                          action: nil)
+            let dropdown = NSMenuItem(
+                title: title.localize(),
+                action: nil
+            )
 
             main.addItem(dropdown)
             main.setSubmenu(submenu, for: dropdown)
@@ -140,9 +175,11 @@ class FinderSync: FIFinderSync {
                 return item.localizedCompare(_item) == .orderedAscending
             })
             
-            MenuCreator.createHiddenFilesMenu(menu: submenu,
-                                              action: selector,
-                                              items: hiddenItems)
+            MenuCreator.createHiddenFileMenu(
+                menu: submenu,
+                action: selector,
+                items: hiddenItems
+            )
         }
     }
     
@@ -177,15 +214,24 @@ class FinderSync: FIFinderSync {
             // Replace DialogCreator with TextInputPanelController
             TextInputPanelController.createSpaceDialog { [self] newSpaceName in
                 if let spaceName = newSpaceName, !spaceName.isEmpty {
-                    spaceController.create(spaceName: spaceName,
-                                          items: items)
+                    spaceController.create(
+                        spaceName: spaceName,
+                        items: items
+                    )
                 }
             }
         }
     }
     
     @IBAction func alterSpace(_ sender: AnyObject?) {
-        spaceController.alter(spaceName: sender!.title)
+        guard let menuItem = sender as? NSMenuItem else { return }
+        let tag = menuItem.tag
+        
+        if let spaceNames = UserDefaults.spaceDefaults.array(forKey: "CustomSpaceNames") as? [String],
+           tag >= 0 && tag < spaceNames.count {
+            let spaceName = spaceNames[tag]
+            spaceController.alter(spaceName: spaceName)
+        }
     }
     
     @IBAction func alterPresetSpace(_ sender: AnyObject?) {
@@ -193,27 +239,40 @@ class FinderSync: FIFinderSync {
     }
     
     @IBAction func deleteSpace(_ sender: AnyObject?) {
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            [self] in
-            NSApplication.shared.activate(ignoringOtherApps: true)
+        guard let menuItem = sender as? NSMenuItem else { return }
+        let tag = menuItem.tag
+        
+        if let spaceNames = UserDefaults.spaceDefaults.array(forKey: "CustomSpaceNames") as? [String],
+           tag >= 0 && tag < spaceNames.count {
+            let spaceName = spaceNames[tag]
             
-            // Replace DialogCreator with TextInputPanelController
-            TextInputPanelController.deleteSpaceDialog(spaceName: sender!.title) { [self] confirmed in
-                if confirmed {
-                    spaceController.delete(spaceName: sender!.title)
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                [self] in
+                NSApplication.shared.activate(ignoringOtherApps: true)
+                
+                TextInputPanelController.deleteSpaceDialog(
+                    spaceName: spaceName
+                ) { [self] confirmed in
+                    if confirmed {
+                        spaceController.delete(spaceName: spaceName)
+                    }
                 }
             }
         }
     }
     
     @IBAction func addToSpace(_ sender: NSMenuItem?) {
-        spaceController.addItems(spaceName: sender!.title,
-                                  items: selectedItems)
+        spaceController.addItems(
+            spaceName: sender!.title,
+            items: selectedItems
+        )
     }
     
     @IBAction func moveToSpace(_ sender: NSMenuItem?) {
-        spaceController.moveItems(spaceName: sender!.title,
-                                  items: selectedItems)
+        spaceController.moveItems(
+            spaceName: sender!.title,
+            items: selectedItems
+        )
     }
     
     @IBAction func show(_ sender: NSMenuItem?) {
@@ -229,8 +288,10 @@ class FinderSync: FIFinderSync {
     }
     
     @IBAction func replace(_ sender: AnyObject?) {
-        spaceController.replace(item: sender!.title,
-                                 items: selectedItems)
+        spaceController.replace(
+            item: sender!.title,
+            items: selectedItems
+        )
     }
 }
 
